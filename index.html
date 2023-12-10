@@ -11,26 +11,23 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 150px */
-.w3-sidebar {width: 1500px;background: #229d4b;}
+.w3-sidebar {width: 275px;background: #229d4b;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (150px) */
-#main {margin-left: 150px}
+#main {margin-left: 275px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
-<body class="w3-white">
+<body class="w3-black">
+
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-hover-opacity-off w3-center">
 
-  <div class="circular-image">
-    <img src="images/image.jpg" alt="My Image">
+  <div class="circular-image" style="margin-top: 50px; margin-bottom: 50px;">
+    <img src="images/image.jpg" alt="My Image" style="width: 80px; height: 80px; border-radius: 50%;">
   </div>
 
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black" >
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
@@ -48,10 +45,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <!-- Navigation items -->
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-share-alt w3-xxlarge"></i>
+    <p>Projects</p>
+  </a>
+  <a href="#experiences" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>Experiences</p>
+  </a>
+    <!-- <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a> -->
   </div>
 </div>
 
@@ -64,7 +74,100 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <img src="images/brain.jpg" alt="brain" class="w3-image" width="1000" height="1108">
   </header>
 
-  <!-- About Section -->
+
+<!-- Section for About -->
+<section id="about">
+  <h2 class="w3-text-light-grey">About me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> I am a detail-oriented and analytically-driven professional, with an M.Sc. in computational neuroscience and a B.Sc. in electrical engineering. 
+      I have a demonstrated track record of applying machine learning methodologies to to tackle real-life challenges. With 4+ years of 
+      programming experience, I possess advanced proficiency in Python, and I have knowledge of working with Rational Database Management Systems (RDBMS) like 
+      MySQL. I consistently seek opportunities to expand my skill set and apply innovative solutions to everyday challenges. With a knack for adapting swiftly 
+      to new environments, I thrive in collaborative settings, fostering strong relationships that bolster collective performance.
+
+    </p>
+    <h2 class="w3-padding-top-32 w3-text-light-grey">My Skills</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">MATLAB</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">MySQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">C / C++</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">HTML / CSS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="w3-wide">Git</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div><br>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <a href="SabaCharmiMotlagh_resume.pdf" target="_blank" download style="text-decoration: none; font-weight: bold"> Resume </a>
+    </button>
+</section>
+
+<!-- Section for Projects -->
+<section id="projects">
+  <h2 class="w3-text-light-grey">Selected Projects</h2>
+
+    <!-- Grid for photos -->
+    <!-- <div class="w3-row-padding" style="margin:0 -16px"> -->
+    <div class="w3-container">
+      <img src="images/EEG.jpg" alt="eeg" class="w3-image w3-padding-64" width=100%>
+      <div class="w3-overlay">
+        <div class="w3-overlay-text">
+          <h3>Neural dynamics of visual processes in challenging visibility conditions</h3>
+          <p>The human brain quickly recognizes objects; however, perceiving objects under difficult conditions is challenging. In our daily life, factors like occlusion, masking, or limited presentation time can render objects invisible or poorly visible. In this project, we used EEG data to decode neural responses and examine rapid object recognition under challenging visibility conditions. We compared brain response decoding for visible and invisible targets in a Rapid Serial Visual Presentation (RSVP) paradigm and found out recurrance is neccesary for recognizing objects in challenging conditions.</p>          
+
+          </div>
+      </div>
+    </div>
+
+    <div class="w3-container">
+      <img src="images/DataFusion.jpg" alt="datafusion" class="w3-image" width=100%>
+      <div class="w3-overlay">
+        <div class="w3-overlay-text">
+          <h3>Emotion recognition through EEG and ECG data fusion</h3>
+          <p>The fusion of EEG and ECG data has emerged as a promising strategy for comprehending and deciphering human emotions. In our project, we integrated EEG and ECG data using various methods and assessed the performance of EEG data alone, ECG data alone, and the fused EEG and ECG data to determine the most effective modality for emotion recognition. We employed multiple classifiers, including SVM, MLP, and BN, and compared their outcomes. The findings demonstrated that by fusing EEG and ECG data at the decision level, we achieved improved accuracy in recognizing human emotions.          </p>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:2750px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xlarge w3-margin-right"></i> London, ON, Canada</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xlarge w3-margin-right"></i> +1 (226) 998-8620</p>
+      <a href="mailto: saba.charmi@gmail.com" download style="text-decoration: none;"><p><i class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"> </i> saba.charmi@gmail.com</p></a>
+      <a href="https://www.linkedin.com/in/sabacharmimotlagh/" download style="text-decoration: none;"><p><i class="fa fa-linkedin-square fa-fw w3-text-white w3-xlarge w3-margin-right"></i> sabacharmimotlagh</p></a>
+      <a href="https://github.com/sabacharmimotlagh/" download style="text-decoration: none;"><p><i class="fa fa-github fa-fw w3-text-white w3-xlarge w3-margin-right" aria-hidden="true"></i> sabacharmimotlagh</p></a>
+    </div>
+  </section>
+<!-- Section for Experiences 
+<section id="experiences">
+  Content for Experiences section
+ </section> --> 
+
+
+
+
+  <!-- About Section 
   <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About me</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -105,14 +208,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
         <a href="SabaCharmiMotlagh_resume.pdf" target="_blank" download style="text-decoration: none; font-weight: bold"> Resume </a>
     </button>
+-->
 
-
-  <!-- Portfolio Section -->
+  <!-- Portfolio Section
   <div class="w3-padding-64 w3-content" id="projects">
     <h2 class="w3-text-light-grey">Selected Projects</h2>
-
+-->
     <!-- Grid for photos -->
-    <!-- <div class="w3-row-padding" style="margin:0 -16px"> -->
+    <!-- <div class="w3-row-padding" style="margin:0 -16px"> 
     <div class="w3-container">
       <img src="images/EEG.jpg" alt="eeg" class="w3-image w3-padding-64" width=100%>
       <div class="w3-overlay">
@@ -133,7 +236,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </div>
       </div>
     </div>
-
+    -->
 
 
 
@@ -143,9 +246,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-white" id="contact">
+  <!-- <div class="w3-padding-64 w3-content w3-text-white" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:2750px" class="w3-opacity">
 
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xlarge w3-margin-right"></i> London, ON, Canada</p>
@@ -153,9 +256,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <a href="mailto: saba.charmi@gmail.com" download style="text-decoration: none;"><p><i class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"> </i> saba.charmi@gmail.com</p></a>
       <a href="https://www.linkedin.com/in/sabacharmimotlagh/" download style="text-decoration: none;"><p><i class="fa fa-linkedin-square fa-fw w3-text-white w3-xlarge w3-margin-right"></i> sabacharmimotlagh</p></a>
       <a href="https://github.com/sabacharmimotlagh/" download style="text-decoration: none;"><p><i class="fa fa-github fa-fw w3-text-white w3-xlarge w3-margin-right" aria-hidden="true"></i> sabacharmimotlagh</p></a>
-    </div><br>
+    </div><br> -->
   <!-- End Contact Section -->
-  </div>
+  </div> 
 
 
     <!-- Footer
@@ -171,6 +274,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- END PAGE CONTENT -->
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Smooth scrolling effect
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
